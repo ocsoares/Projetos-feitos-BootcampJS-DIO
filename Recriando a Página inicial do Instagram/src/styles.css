@@ -1,0 +1,146 @@
+/* Resetando Estilos para Evitar erros */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    text-decoration: 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-logo img{
+    height: 6rem;
+}
+
+.instagram-login{ /* instagram-continue */
+    min-height: 19rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.first-box-login, .second-box-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0px;
+    border: 1px solid slategray;
+}
+
+.text-login{
+    background-color: #0095f6;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.text-logout{
+    color: #0095f6;
+    margin-top: 0.5rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.change-account, .sign-up{
+    color: #0095f6;
+}
+
+.buttons-login{ /* get-the-app <-- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 0;
+}
+
+.buttons{ /* buttons = download */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.buttons img{ /* app download */
+    height: 3rem;
+    width: 10rem;
+}
+
+.get-app{
+    font-size: 17px;
+}
+
+    /* Responsividade da Tela !! */
+
+@media (max-width: 1024px) { /* Tela de PC !! << */
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) { /* Tela de CELULAR !! << */
+    body{
+        background-color: white;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-login{
+        width: 100%;
+    }
+}
